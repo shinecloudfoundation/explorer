@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动设备优先 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>IRISplorer</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <!-- Bootstrap -->
+    <link rel="icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/download/download.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="all" class="container-fluid" hidden="hidden">
+    <div class="row main pc">
+        <div class="header-title-content">
+            <div class="header-title">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="header-title-info" style="color:#000">
+                <p class="expect-title">Mainnet will launch soon, please stay tuned...</p>
+                <p class="header-title-explorer">You can also visit <a id="link" target="_blank">testnet explorer</a> to preview</p>
+            </div>
+        </div>
+    </div>
+    <div class="row phone" style="text-align: center">
+        <div class="mobile-content">
+           <div class="mobile-img-logo">
+               <div class="logo-content">
+                   <img src="img/logo.png">
+               </div>
+               <img src="img/welcome-mobile.jpg">
+              <div class="mobile-title-content">
+                  <p class="mobile-expect-title">Mainnet will launch soon, please stay tuned...</p>
+                  <p class="mobile-header-title-explorer">You can also visit <a id="mobile_link" target="_blank">testnet explorer</a> to preview</p>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script type="application/javascript">
+    $(document).ready(function () {
+        var ua = navigator.userAgent;
+
+        var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+            isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+            isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+            isMobile = isIphone || isAndroid;
+
+        if (isMobile) {
+            $("div.pc").hide();
+            $("div.phone").show();
+            $("#all").show();
+        } else {
+            $("div.pc").show();
+            $("div.phone").hide();
+            $("#all").show();
+        }
+        if(window.location.hostname.split('.')[2] === 'cn'){
+            $('#link').attr('href',"https://testnet.irisplorer.cn/#/home")
+        }else {
+            $('#link').attr('href',"https://testnet.irisplorer.io/#/home")
+        }
+        if(window.location.hostname.split('.')[2] === 'cn'){
+            $('#mobile_link').attr('href',"https://testnet.irisplorer.cn/#/home")
+        }else {
+            $('#mobile_link').attr('href',"https://testnet.irisplorer.io/#/home")
+        }
+    })
+
+</script>
+</body>
+</html>

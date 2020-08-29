@@ -1,0 +1,192 @@
+/**
+ * css for download html
+ */
+html {
+    font-size: 625%
+}
+
+body {
+    color: white;
+    font-family: "Microsoft YaHei UI", "serif","PingFang SC Bold","PingFang SC Regular";
+    font-size:16px;
+
+    /*background-position: center;*/
+}
+/*@media screen  {*/
+    /**/
+/*}*/
+
+div.download-pc {
+    /*color: white;*/
+    /*background-color: #0d85cb;*/
+    /*padding-bottom: 4%;*/
+    /*text-align: center;*/
+    width: 395px;
+    margin: auto;
+    /*position: relative;*/
+}
+
+div.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../img/welcome-bg.jpg")no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*div.main div.qr, div.qr div p {*/
+/*margin-top: 4%;*/
+/*}*/
+
+div.footer {
+    margin-top: 5%;
+}
+
+.block-inline {
+    display: inline-block;
+}
+
+.gray-font {
+    color: #737a8d;
+}
+
+.protocol-font {
+    color: #737a8d;
+}
+
+.download-font {
+    color: #413f4d;
+}
+
+.download-font-phone {
+    color: #747f93;
+}
+
+.btn-download-android {
+    width: 78%;
+    background: #4781ff;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.08rem 0;
+}
+
+.btn-download-ios {
+    width: 78%;
+    background: #6750e9;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.08rem 0;
+}
+.header-title{
+    width: 68%;
+    margin-left: 16%;
+}
+.container-fluid{
+    width: 100%;
+}
+.lang-block{
+    height: 0.54rem;
+    line-height: 0.54rem;
+}
+.header-logo{
+    padding-top: 0.42rem;
+}
+.font-container{
+    position: absolute;
+    top: 44%;
+    left: 48%;
+    color: #000;
+}
+.title{
+    font-size: 0.26rem;
+    color: #646466;
+}
+.header-title-info{
+    width: 68%;
+    margin-left: 16%;
+    padding-top: 0.38rem;
+}
+.expect-title{
+    font-size: 0.35rem;
+    color: #A2A2AE;
+    margin: 0;
+    padding: 0;
+ }
+
+.header-title-explorer{
+    font-size: 0.28rem;
+    color: #3498DB;
+}
+.header-title-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.explorer-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.mobile-img-logo{
+    width: 100%;
+    height: 100%;
+}
+.mobile-img-logo img{
+    width: 100%;
+}
+.logo-content{
+    position: absolute;
+    width: 1.71rem;
+    height: 0.56rem;
+    margin: 0.37rem 0 0 0.28rem;
+
+}
+.logo-content img{
+    width: 100%;
+}
+.mobile-title-content{
+    text-align: left;
+    position: absolute;
+    margin: 0.1rem 0.28rem 0 0.28rem;
+    top:0.93rem;
+    color: #000;
+}
+.mobile-expect-title{
+    font-size: 0.2rem;
+    color: #A2A2AE;
+}
+.mobile-header-title-explorer{
+    font-size: 0.16rem;
+    color: #3498DB;
+}
+.mobile-explorer-btn{
+    display: inline-block;
+    font-size: 0.13rem;
+    padding: 0.14rem 0.21rem;
+    background: #3498DB;
+    color: #fff;
+    border-radius: 0.08rem;
+    margin-top: 0.3rem;
+
+}
+.mobile-explorer-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+#link{
+    color: #3498DB !important;
+    text-decoration: none;
+    font-style: italic;
+    margin-right: 0.05rem;
+}
+#link:hover{
+    border-bottom: 0.02rem solid #3498DB;
+}
+#mobile_link{
+    color: #3498DB !important;
+    height: 0.18rem;
+    line-height: 0.18rem;
+    border-bottom: 0.01rem solid #3498DB;
+    text-decoration: none ;
+}
