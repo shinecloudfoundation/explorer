@@ -31,7 +31,7 @@ sudo service docker restart
 ### 下载mongo镜像
 
 ```shell script
-docker pull mongo
+sudo docker pull mongo
 ```
 
 ### 安装golang
@@ -52,12 +52,6 @@ mv node-v12.18.3-linux-x64 node
 sudo mv node /usr/local
 ```
 
-### 安装yarn
-
-```shell script
-npm install -g yarn
-```
-
 ### 添加环境变量
 
 编辑`$HOME/.bashrc`，添加如下配置
@@ -71,6 +65,12 @@ export PATH=$PATH:/usr/local/node/bin:$GOPATH/bin:$GOROOT/bin
 重新加载环境变量
 ```shell script
 source $HOME/.bashrc
+```
+
+### 安装yarn
+
+```shell script
+npm install -g yarn
 ```
 
 ## 部署服务
