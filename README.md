@@ -80,7 +80,7 @@ npm install -g yarn
 1. 启动mongo容器
 
     ```shell script
-    docker run -p 0.0.0.0:27017:27017/tcp -d --name shinecloudnet-mongo -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
+    sudo docker run -p 0.0.0.0:27017:27017/tcp -d --name shinecloudnet-mongo -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
     ```
 
 2. 登陆mongo shell
