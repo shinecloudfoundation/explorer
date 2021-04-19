@@ -92,7 +92,7 @@ npm install -g yarn
 3. 在mongo shell里面创建mongo用户
 
     ```
-    use sync-shinecloudnet
+    use shinecloudnet-explorer
     db.createUser({
         user:"shinecloudnet",
         pwd:"shinecloudnetpassword",
